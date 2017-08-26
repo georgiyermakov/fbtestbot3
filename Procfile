@@ -1,1 +1,1 @@
-web: gunicorn web_app:app
+web: gunicorn app:create_app() -b 0.0.0.0:$PORT -w 3
